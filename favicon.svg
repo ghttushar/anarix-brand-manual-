@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Anarix">
-  <rect width="64" height="64" rx="18" fill="#08131e" />
-  <path d="M16 49 29 15h6l13 34h-7l-2.74-7.44H25.74L23 49Zm12-13.34h8l-3.94-10.86h-.12Z" fill="#f5efe6" />
-  <circle cx="47" cy="17" r="4" fill="#d9935d" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Anarix and Aan symbol">
+  <rect width="64" height="64" rx="18" fill="#0d1020" />
+  <path d="M14 48 24.2 23h8.2L22.8 48Z" fill="#6e82f5" />
+  <path d="M30 48 40.2 23h8.2L38.8 48Z" fill="#4a62d9" />
+  <rect x="24.2" y="9.8" width="14.5" height="14.5" rx="2.4" transform="rotate(45 24.2 9.8)" fill="#f26e77" />
 </svg>

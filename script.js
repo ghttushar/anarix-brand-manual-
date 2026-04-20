@@ -1,141 +1,232 @@
-const scenes = {
-  launch: {
-    tag: "Launch readiness",
-    state: "Ready to review",
-    kicker: "Structured next step",
-    title: "Everything is aligned. Review the launch path.",
+const motionStates = {
+  idle: {
+    chip: "Idle",
+    title: "Aan waits above the system, calm and ready.",
     copy:
-      "A strong product moment should feel focused, not loud. Surface what matters, hide the rest, and let the primary decision breathe.",
+      "Idle is a suspended state. Aan should feel aware of the body beneath it without performing for attention.",
     points: [
-      "Single primary CTA with support details beneath it",
-      "Calm reassurance before the point of commitment",
-      "Secondary actions shifted into a lighter visual weight",
+      "Use a subtle float, not a bounce.",
+      "Keep the diamond above the pillars even when nothing is happening.",
+      "Make the presence legible before adding spectacle.",
     ],
-    cta: "Review launch",
-    principle: "Make the next action obvious.",
-    note:
-      "This state demonstrates how the brand should handle high-importance moments: composed language, one dominant action, and no competing surfaces.",
   },
-  onboarding: {
-    tag: "Guided onboarding",
-    state: "Step 2 of 4",
-    kicker: "Progress with context",
-    title: "Set the essentials now. The deeper setup can wait.",
+  cursor: {
+    chip: "Cursor aware",
+    title: "Aan acknowledges attention and leans toward intent.",
     copy:
-      "The manual should encourage progressive disclosure. Ask for the minimum needed to move forward, then expand only when confidence has been earned.",
+      "Cursor response should feel magnetic and intelligent. The movement can be noticeable, but it should never look playful or unstable.",
     points: [
-      "Break complex setup into clean, visible stages",
-      "Use helper text to reduce hesitation before input",
-      "Reward completion with a clear sense of momentum",
+      "Track the pointer with resistance, not direct attachment.",
+      "Use movement to suggest awareness, not entertainment.",
+      "Return cleanly to center when the user leaves.",
     ],
-    cta: "Continue setup",
-    principle: "Reduce cognitive load before asking for trust.",
-    note:
-      "This scene frames onboarding as guidance, not friction. Small asks, visible progress, and compact explanations keep the brand feeling capable and considerate.",
   },
-  consent: {
-    tag: "Trust confirmation",
-    state: "Awaiting approval",
-    kicker: "Calm reassurance",
-    title: "Before you confirm, here is exactly what changes.",
+  think: {
+    chip: "Thinking",
+    title: "Aan compresses the signal while it reasons.",
     copy:
-      "Trust moments need plain language and visible consequences. The interface should slow down just enough for confidence without creating fear or ceremony.",
+      "Thinking state should feel focused. Tighten the diamond, rotate the ring, and hold the pillars steady so the system still feels grounded.",
     points: [
-      "Explain the impact in direct, literal language",
-      "Keep destructive or permanent actions visually contained",
-      "Offer a soft escape route without hiding the choice",
+      "The ring can rotate, but the structure should stay stable.",
+      "Use repetition to imply computation, not anxiety.",
+      "Keep the hierarchy intact while the AI is processing context.",
     ],
-    cta: "Confirm change",
-    principle: "Use restraint to increase trust.",
-    note:
-      "Brand confidence often shows up as patience. This state proves that precision and transparency can feel premium without sounding severe.",
   },
-  recovery: {
-    tag: "Recovery path",
-    state: "Safe fallback ready",
-    kicker: "No dead ends",
-    title: "Something drifted. Here is the fastest path back.",
+  loading: {
+    chip: "Loading",
+    title: "Aan can morph into a loading bar when work becomes visible.",
     copy:
-      "Recovery experiences should protect momentum. A useful system names the issue clearly, restores orientation, and offers the smallest possible next move.",
+      "The loading morph is allowed because it translates intelligence into progress. It should feel like a deliberate system state, not a gimmick.",
     points: [
-      "State the problem once, then focus on the remedy",
-      "Lead with the most likely successful action",
-      "Preserve context so users do not feel reset or punished",
+      "Shift from diamond to bar only while real progress is happening.",
+      "Keep coral in charge of the state change so the AI remains identifiable.",
+      "Return to the diamond once the action resolves.",
     ],
-    cta: "Restore progress",
-    principle: "Recovery should feel supportive, not apologetic.",
-    note:
-      "The brand stays calm under stress. Recovery patterns are where that discipline becomes most visible and most memorable.",
+  },
+  action: {
+    chip: "Taking action",
+    title: "Aan brightens, commits, and pushes clarity back into the system.",
+    copy:
+      "Action state is the moment where intelligence becomes assistance. It should feel decisive and energized, but still controlled.",
+    points: [
+      "Use stronger halo and signal lines to suggest activation.",
+      "End in a clear result, not a lingering animation.",
+      "Leave the user with confidence, not suspense.",
+    ],
   },
 };
 
-const bindings = {
-  tag: document.getElementById("scene-tag"),
-  state: document.getElementById("scene-state"),
-  kicker: document.getElementById("scene-kicker"),
-  title: document.getElementById("scene-title"),
-  copy: document.getElementById("scene-copy"),
-  points: document.getElementById("scene-points"),
-  cta: document.getElementById("scene-cta"),
-  principle: document.getElementById("scene-principle"),
-  note: document.getElementById("scene-note"),
+const motionBindings = {
+  chip: document.getElementById("motion-state-chip"),
+  title: document.getElementById("motion-title"),
+  copy: document.getElementById("motion-copy"),
+  points: document.getElementById("motion-points"),
+  presence: document.getElementById("motion-presence"),
 };
 
-const sceneButtons = Array.from(document.querySelectorAll("[data-scene]"));
+const motionButtons = Array.from(document.querySelectorAll("[data-motion-state]"));
+let currentMotionState = "idle";
 
-function renderScene(sceneName) {
-  const scene = scenes[sceneName];
+function renderMotionState(stateName) {
+  const state = motionStates[stateName];
 
-  if (!scene) {
+  if (!state || !motionBindings.presence) {
     return;
   }
 
-  bindings.tag.textContent = scene.tag;
-  bindings.state.textContent = scene.state;
-  bindings.kicker.textContent = scene.kicker;
-  bindings.title.textContent = scene.title;
-  bindings.copy.textContent = scene.copy;
-  bindings.cta.textContent = scene.cta;
-  bindings.principle.textContent = scene.principle;
-  bindings.note.textContent = scene.note;
-
-  bindings.points.replaceChildren(
-    ...scene.points.map((point) => {
+  currentMotionState = stateName;
+  motionBindings.chip.textContent = state.chip;
+  motionBindings.title.textContent = state.title;
+  motionBindings.copy.textContent = state.copy;
+  motionBindings.points.replaceChildren(
+    ...state.points.map((point) => {
       const item = document.createElement("li");
       item.textContent = point;
       return item;
     }),
   );
 
-  sceneButtons.forEach((button) => {
-    const isActive = button.dataset.scene === sceneName;
+  motionBindings.presence.className = `aan-presence state-${stateName}`;
+
+  motionButtons.forEach((button) => {
+    const isActive = button.dataset.motionState === stateName;
     button.classList.toggle("is-active", isActive);
     button.setAttribute("aria-selected", String(isActive));
   });
 }
 
-sceneButtons.forEach((button) => {
+motionButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    renderScene(button.dataset.scene);
+    renderMotionState(button.dataset.motionState);
   });
 });
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.18,
-  },
-);
+function createFollower(stage, anchor, { strength = 0.18, limitX = 54, limitY = 42 } = {}) {
+  if (!stage || !anchor) {
+    return {
+      fromEvent() {},
+      reset() {},
+    };
+  }
 
-document.querySelectorAll(".reveal").forEach((section) => {
-  revealObserver.observe(section);
+  let targetX = 0;
+  let targetY = 0;
+  let currentX = 0;
+  let currentY = 0;
+  let frameId = 0;
+
+  const tick = () => {
+    currentX += (targetX - currentX) * 0.14;
+    currentY += (targetY - currentY) * 0.14;
+    anchor.style.transform = `translate(${currentX}px, ${currentY}px)`;
+
+    if (Math.abs(targetX - currentX) > 0.12 || Math.abs(targetY - currentY) > 0.12) {
+      frameId = requestAnimationFrame(tick);
+    } else {
+      frameId = 0;
+    }
+  };
+
+  const schedule = () => {
+    if (!frameId) {
+      frameId = requestAnimationFrame(tick);
+    }
+  };
+
+  const setTarget = (x, y) => {
+    targetX = Math.max(-limitX, Math.min(limitX, x));
+    targetY = Math.max(-limitY, Math.min(limitY, y));
+    schedule();
+  };
+
+  return {
+    fromEvent(event) {
+      const rect = stage.getBoundingClientRect();
+      const relativeX = (event.clientX - rect.left) / rect.width;
+      const relativeY = (event.clientY - rect.top) / rect.height;
+      const offsetX = (relativeX - 0.5) * rect.width * strength;
+      const offsetY = (relativeY - 0.5) * rect.height * strength;
+
+      stage.style.setProperty("--pointer-x", `${relativeX * 100}%`);
+      stage.style.setProperty("--pointer-y", `${relativeY * 100}%`);
+      setTarget(offsetX, offsetY);
+    },
+    reset() {
+      stage.style.removeProperty("--pointer-x");
+      stage.style.removeProperty("--pointer-y");
+      setTarget(0, 0);
+    },
+  };
+}
+
+const heroStage = document.getElementById("hero-stage");
+const heroMascot = document.getElementById("hero-mascot");
+const heroPresence = document.getElementById("hero-presence");
+const motionStage = document.getElementById("motion-stage");
+const motionAnchor = document.getElementById("motion-anchor");
+
+const heroFollower = createFollower(heroStage, heroMascot, {
+  strength: 0.18,
+  limitX: 58,
+  limitY: 50,
 });
 
-renderScene("launch");
+const motionFollower = createFollower(motionStage, motionAnchor, {
+  strength: 0.22,
+  limitX: 76,
+  limitY: 62,
+});
+
+if (heroStage && heroPresence) {
+  heroStage.addEventListener("mousemove", (event) => {
+    heroFollower.fromEvent(event);
+    heroPresence.className = "aan-presence state-cursor";
+  });
+
+  heroStage.addEventListener("mouseleave", () => {
+    heroFollower.reset();
+    heroPresence.className = "aan-presence state-idle";
+  });
+}
+
+if (motionStage) {
+  motionStage.addEventListener("mousemove", (event) => {
+    if (currentMotionState === "cursor") {
+      motionFollower.fromEvent(event);
+    } else {
+      const rect = motionStage.getBoundingClientRect();
+      motionStage.style.setProperty("--pointer-x", `${((event.clientX - rect.left) / rect.width) * 100}%`);
+      motionStage.style.setProperty("--pointer-y", `${((event.clientY - rect.top) / rect.height) * 100}%`);
+    }
+  });
+
+  motionStage.addEventListener("mouseleave", () => {
+    motionFollower.reset();
+  });
+}
+
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.18,
+    },
+  );
+
+  document.querySelectorAll(".reveal").forEach((section) => {
+    revealObserver.observe(section);
+  });
+} else {
+  document.querySelectorAll(".reveal").forEach((section) => {
+    section.classList.add("is-visible");
+  });
+}
+
+renderMotionState("idle");
