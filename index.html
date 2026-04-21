@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anarix Brand Manual | Phase 1</title>
+    <title>Anarix Brand Manual | Phase 1 + Aan Phase 2</title>
     <meta
       name="description"
-      content="Anarix phase 1 brand manual documenting the exact official mark, core colors, usage rules, and unchanged logo animation."
+      content="Anarix brand manual covering the approved phase 1 foundation and the Aan phase 2 mascot, state, placement, and integration spec."
     />
     <link rel="icon" href="anarix-symbol.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,43 +21,43 @@
         </span>
         <span class="brand-home-copy">
           <strong>Anarix</strong>
-          <span>Phase 1 brand manual</span>
+          <span>Phase 1 + Aan phase 2</span>
         </span>
       </a>
 
       <nav class="site-nav" aria-label="Primary">
-        <a href="#color">Color</a>
-        <a href="#mark">Mark</a>
-        <a href="#usage">Usage</a>
-        <a href="#dont">Do Not</a>
+        <a href="#color">Anarix</a>
         <a href="#motion">Motion</a>
-        <a href="#assets">Assets</a>
+        <a href="#aan-still">Aan</a>
+        <a href="#aan-loader">States</a>
+        <a href="#aan-placements">Placements</a>
+        <a href="#aan-rules">Rules</a>
       </nav>
 
-      <a class="header-cta" href="#assets">Download source files</a>
+      <a class="header-cta" href="#aan-still">Jump to Aan</a>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-inner">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Phase 1 / Anarix Only</p>
-            <h1>The exact logo, symbol, and motion reference for Anarix.</h1>
+            <p class="eyebrow">Phase 1 / Anarix Foundation + Phase 2 / Aan Layer</p>
+            <h1>The exact Anarix foundation, then the Aan intelligence layer that lives inside the app.</h1>
             <p class="hero-summary">
-              This manual documents the official Anarix logo, the standalone symbol, the exact
-              asset colors taken from the supplied SVG files, approved light and dark usage, and
-              the unchanged loader animation used as the motion reference.
+              Phase 1 keeps the approved Anarix logo, symbol, colors, and loader reference intact.
+              Phase 2 adds Aan as the diamond-first mascot, state system, and placement spec shown
+              on the real Anarix dashboard framework.
             </p>
 
             <div class="hero-actions">
-              <a class="button button-solid" href="#usage">Review usage rules</a>
-              <a class="button button-ghost" href="#motion">See exact animation</a>
+              <a class="button button-solid" href="#usage">Review Anarix foundation</a>
+              <a class="button button-ghost" href="#aan-still">Open Aan phase</a>
             </div>
 
             <ul class="hero-facts">
-              <li>One official full-logo SVG used unchanged.</li>
-              <li>One official standalone-symbol SVG used unchanged.</li>
-              <li>One official Lottie JSON animation rendered untouched.</li>
+              <li>One approved Anarix logo system, kept unchanged.</li>
+              <li>Latest dashboard UI used as the primary Aan placement baseline.</li>
+              <li>Only future mascot behaviors are marked inferred. Current product surfaces are source-backed.</li>
             </ul>
           </div>
 
@@ -68,9 +68,23 @@
             <div class="hero-stage-frame">
               <p class="stage-label">Official source logo</p>
               <img class="hero-mark" src="anarix-logo.svg" alt="" />
+              <div class="hero-aan-presence">
+                <div class="aan-avatar size-sm state-still">
+                  <span class="aan-halo"></span>
+                  <span class="aan-orbit"></span>
+                  <span class="aan-body">
+                    <span class="aan-face">
+                      <span class="aan-eye eye-left"><span class="aan-pupil"></span></span>
+                      <span class="aan-eye eye-right"><span class="aan-pupil"></span></span>
+                    </span>
+                  </span>
+                  <span class="aan-loading-bar"></span>
+                </div>
+              </div>
               <p class="hero-stage-note">
-                The supplied full logo and the supplied standalone symbol are the only approved
-                phase 1 identity files.
+                The supplied full logo and the supplied standalone symbol are the approved phase 1
+                identity files. Aan sits above this foundation as the app-facing intelligence layer
+                in phase 2.
               </p>
             </div>
           </div>
@@ -362,7 +376,7 @@
                 </div>
                 <div>
                   <dt>Canvas</dt>
-                  <dd>149 × 159</dd>
+                  <dd>149 x 159</dd>
                 </div>
               </dl>
 
@@ -383,7 +397,7 @@
                 </a>
               </div>
 
-              <p class="motion-status" id="motion-status">Loading official source animation…</p>
+              <p class="motion-status" id="motion-status">Loading official source animation...</p>
             </div>
           </div>
         </div>
@@ -393,7 +407,7 @@
         <div class="section-inner">
           <div class="section-heading">
             <p class="eyebrow">Asset Handoff</p>
-            <h2>These two files are the phase 1 source-of-truth package for future design work.</h2>
+            <h2>These three files are the phase 1 source-of-truth package for future design work.</h2>
           </div>
 
           <div class="asset-grid">
@@ -422,10 +436,759 @@
           </p>
         </div>
       </section>
+
+      <section class="section-shell section-shell-dark reveal phase-divider" id="aan-intro">
+        <div class="section-inner">
+          <div class="phase-divider-layout">
+            <div class="phase-divider-copy">
+              <p class="eyebrow">Phase 2 / Aan by Anarix</p>
+              <h2>The mascot, state system, and placement spec for Aan inside the current app.</h2>
+              <p class="phase-summary">
+                Aan is planned as a diamond-first presence that sits above action, follows intent,
+                and enters only where the product already has a reason for AI.
+              </p>
+            </div>
+
+            <article class="reference-card">
+              <p class="kicker">Reference fidelity</p>
+              <p>
+                Latest dashboard screenshot is the primary UI baseline. The local app source in
+                <code>analysis/anarix-insight-engine</code> confirms the sidebar, taskbar, floating
+                action island, copilot panel, workspace route, selection tooltip, and split
+                artifact flow. Only the new mascot behavior layer is inferred from the live bundle
+                and your provided Aria recording.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-shell-light reveal" id="aan-still">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Aan Still Form</p>
+            <h2>Aan starts as a floating diamond with only enough face to feel aware.</h2>
+          </div>
+
+          <div class="aan-still-layout">
+            <div class="aan-stage-card">
+              <div class="aan-avatar size-hero state-still" aria-label="Aan still form">
+                <span class="aan-halo"></span>
+                <span class="aan-orbit"></span>
+                <span class="aan-body">
+                  <span class="aan-face">
+                    <span class="aan-eye eye-left"><span class="aan-pupil"></span></span>
+                    <span class="aan-eye eye-right"><span class="aan-pupil"></span></span>
+                  </span>
+                </span>
+                <span class="aan-loading-bar"></span>
+              </div>
+            </div>
+
+            <div class="aan-copy-stack">
+              <p>
+                The still form is the calmest version of Aan. It holds the diamond first, keeps
+                the eyes minimal, and floats with restraint so it can live in loaders, buttons,
+                chat anchors, and action surfaces without becoming a mascot costume.
+              </p>
+
+              <ul class="detail-list">
+                <li>Diamond first, circle second, bar third.</li>
+                <li>Eyes move smoothly and infrequently.</li>
+                <li>Coral is the default body color.</li>
+                <li>Blue and black appear only when state or context asks for them.</li>
+              </ul>
+
+              <div class="taxonomy-block">
+                <p class="kicker">State taxonomy</p>
+                <div class="state-taxonomy" id="state-taxonomy"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-shell-light reveal" id="aan-meaning">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Aan Meaning</p>
+            <h2>The name carries dignity, esteem, grace, and sunlit clarity in the brand story you supplied.</h2>
+          </div>
+
+          <div class="meaning-grid">
+            <article class="meaning-card">
+              <p class="kicker">Hindi and Sanskrit signal</p>
+              <h3>Self-respect, dignity, esteem, honor, grace, and the sun.</h3>
+              <p>
+                This chapter uses the meaning set you supplied for the brand narrative, not a new
+                reinterpretation. Aan should feel composed, respected, and above reaction.
+              </p>
+            </article>
+
+            <article class="meaning-card">
+              <p class="kicker">English brand gloss</p>
+              <h3>Presence, poise, kindness, peace, and clear guidance.</h3>
+              <p>
+                In English usage inside the manual, Aan reads as calm intelligence. It notices,
+                interprets, and responds without panic or spectacle.
+              </p>
+            </article>
+
+            <article class="meaning-card">
+              <p class="kicker">Product translation</p>
+              <h3>If Anarix is the body, Aan is the watchful layer above action.</h3>
+              <p>
+                The mascot should always imply awareness of the system beneath it. It does not
+                replace the product. It helps the product notice, analyze, and act.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-shell-warm reveal" id="aan-fullform">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Aan Full Form</p>
+            <h2><code>Aan = Anarix Analytical Nural</code></h2>
+          </div>
+
+          <div class="fullform-layout">
+            <div class="fullform-copy">
+              <p>
+                This acronym is shown exactly as supplied for the brand manual. It turns Aan from a
+                mascot into a product logic: native to Anarix, analytical by role, and connected
+                across the system like a neural layer.
+              </p>
+              <p class="fullform-note">Spelling is preserved exactly as provided for this phase.</p>
+            </div>
+
+            <div class="fullform-grid">
+              <article class="fullform-card">
+                <p class="kicker">A / Anarix</p>
+                <h3>Native to the platform.</h3>
+                <p>Aan should always feel like it belongs to Anarix, not like a bolted-on chatbot.</p>
+              </article>
+
+              <article class="fullform-card">
+                <p class="kicker">A / Analytical</p>
+                <h3>Grounded in context, signals, and evidence.</h3>
+                <p>
+                  Aan listens to prompts, understands the page, reads artifacts, and turns product
+                  context into the next useful action.
+                </p>
+              </article>
+
+              <article class="fullform-card">
+                <p class="kicker">N / Nural</p>
+                <h3>Connected across nodes, screens, and actions.</h3>
+                <p>
+                  The spelling is kept as provided, and the meaning stays operational: Aan reaches
+                  across the app wherever insight becomes action.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-shell-dark reveal" id="aan-loader">
+        <div class="section-inner">
+          <div class="section-heading section-heading-dark">
+            <p class="eyebrow">Aan Loader</p>
+            <h2>Idle loader keeps the mascot present, calm, and immediately legible before it does anything else.</h2>
+          </div>
+
+          <div class="aan-state-layout">
+            <div class="aan-stage-card aan-stage-card-dark">
+              <div class="aan-avatar size-xl state-idle-loader" aria-label="Aan idle loader state">
+                <span class="aan-halo"></span>
+                <span class="aan-orbit"></span>
+                <span class="aan-body">
+                  <span class="aan-face">
+                    <span class="aan-eye eye-left"><span class="aan-pupil"></span></span>
+                    <span class="aan-eye eye-right"><span class="aan-pupil"></span></span>
+                  </span>
+                </span>
+                <span class="aan-loading-bar"></span>
+              </div>
+              <p class="stage-caption">Default loader / analyzing idle</p>
+            </div>
+
+            <article class="state-copy-card state-copy-card-dark">
+              <p>
+                Use the idle loader when Aan is visible but not yet responding. It should feel
+                awake, balanced, and patient. The eyes can glance, but the body should remain calm.
+              </p>
+
+              <ul class="detail-list">
+                <li>No jittering or hyperactive blinking.</li>
+                <li>No giant morph until real work begins.</li>
+                <li>Keep the diamond readable before adding aura or orbit.</li>
+                <li>Let the loader imply attention, not entertainment.</li>
+              </ul>
+
+              <p class="reference-note">
+                Behavior below is inferred from your Aria recording plus the Anarix loader logic.
+                Still frames were not available in this workspace.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-shell-light reveal" id="aan-chat">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Chat Above Input</p>
+            <h2>Aan lives above the text box, not inside the user&apos;s sentence.</h2>
+          </div>
+
+          <div class="chat-layout">
+            <div class="chat-surface">
+              <div class="surface-topline">
+                <span>Chat above input</span>
+                <span class="inference-badge">Inferred surface</span>
+              </div>
+
+              <div class="chat-thread">
+                <div class="chat-message chat-message-assistant">
+                  Hello! I&apos;m Aan, your AI assistant for Anarix. I can help you analyze campaign
+                  performance, create rules, and optimize your advertising strategy.
+                </div>
+                <div class="chat-message chat-message-user">
+                  Show my last 7 days campaign performance and tell me where I am overspending.
+                </div>
+              </div>
+
+              <div class="chat-composer-shell">
+                <div class="chat-aan-anchor" aria-hidden="true">
+                  <div class="aan-avatar size-sm state-chat-hovering">
+                    <span class="aan-halo"></span>
+                    <span class="aan-orbit"></span>
+                    <span class="aan-body">
+                      <span class="aan-face">
+                        <span class="aan-eye eye-left"><span class="aan-pupil"></span></span>
+                        <span class="aan-eye eye-right"><span class="aan-pupil"></span></span>
+                      </span>
+                    </span>
+                    <span class="aan-loading-bar"></span>
+                  </div>
+                </div>
+
+                <div class="chat-input-field">
+                  Analyze my last 7 days campaign performance and tell me where I am overspending.
+                </div>
+                <button class="chat-send" type="button">Ask Aan</button>
+              </div>
+            </div>
+
+            <article class="state-copy-card">
+              <p>
+                When the user is composing, Aan should hover just above the field as a listening
+                presence. It should not live inline with the placeholder, and it should not block
+                typing or selection.
+              </p>
+
+              <ul class="detail-list">
+                <li>Center Aan above the composer.</li>
+                <li>Use smaller scale than loader state.</li>
+                <li>Keep coral dominant while the user is still speaking.</li>
+                <li>Do not add hover noise unless the field is active.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-shell-dark reveal" id="aan-states">
+        <div class="section-inner">
+          <div class="section-heading section-heading-dark">
+            <p class="eyebrow">Thinking And Analyzing</p>
+            <h2>When the user commits a prompt, Aan tightens, listens, thinks, and resolves into analysis without becoming theatrical.</h2>
+          </div>
+
+          <div class="process-layout">
+            <div class="process-panel">
+              <div class="surface-topline surface-topline-dark">
+                <span>Shared state map</span>
+                <span class="process-chip" id="process-state-chip">typing-listening</span>
+              </div>
+
+              <div class="process-avatar-row">
+                <div class="aan-avatar size-lg state-typing-listening" id="process-avatar" aria-label="Aan processing state demo">
+                  <span class="aan-halo"></span>
+                  <span class="aan-orbit"></span>
+                  <span class="aan-body">
+                    <span class="aan-face">
+                      <span class="aan-eye eye-left"><span class="aan-pupil"></span></span>
+                      <span class="aan-eye eye-right"><span class="aan-pupil"></span></span>
+                    </span>
+                  </span>
+                  <span class="aan-loading-bar"></span>
+                </div>
+
+                <div class="process-copy-stack">
+                  <h3 id="process-title">Aan listens before it commits to motion.</h3>
+                  <p id="process-copy">
+                    Typing state should stay coral-forward, compact, and attentive. The eyes can
+                    hold a stronger focus, but the body should remain readable as a diamond.
+                  </p>
+                </div>
+              </div>
+
+              <div class="process-prompt-card">
+                <p class="surface-label">Current prompt</p>
+                <p>Generate a report for my last 7 days campaign performance.</p>
+              </div>
+
+              <ul class="detail-list process-points" id="process-points"></ul>
+
+              <div class="process-controls" role="tablist" aria-label="Aan processing states">
+                <button class="process-button is-active" data-process-state="typing-listening" type="button">
+                  Typing
+                </button>
+                <button class="process-button" data-process-state="thinking-processing" type="button">
+                  Thinking
+                </button>
+                <button class="process-button" data-process-state="analyzing" type="button">
+                  Analyzing
+                </button>
+              </div>
+            </div>
+
+            <div class="process-side">
+              <article class="state-copy-card state-copy-card-dark">
+                <p>
+                  Controlled morphing is allowed only when the change communicates real product
+                  work. Thinking can compress the diamond. Analyzing can introduce blue and the
+                  loading bar. The base body should always return to the diamond.
+                </p>
+
+                <ul class="detail-list">
+                  <li>Typing stays closest to still form.</li>
+                  <li>Thinking adds tension and orbit, not panic.</li>
+                  <li>Analyzing can shift toward blue or black when context requires.</li>
+                  <li>Each state must exit cleanly back into a readable idle.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-shell-warm reveal" id="aan-cursor">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Cursor Aware</p>
+            <h2>Pointer response should feel magnetic, precise, and quiet.</h2>
+          </div>
+
+          <div class="cursor-layout">
+            <div class="cursor-stage" id="cursor-stage">
+              <div class="cursor-grid"></div>
+              <div class="aan-avatar size-xl state-cursor-aware" id="cursor-avatar" aria-label="Aan cursor aware demo">
+                <span class="aan-halo"></span>
+                <span class="aan-orbit"></span>
+                <span class="aan-body">
+                  <span class="aan-face">
+                    <span class="aan-eye eye-left"><span class="aan-pupil"></span></span>
+                    <span class="aan-eye eye-right"><span class="aan-pupil"></span></span>
+                  </span>
+                </span>
+                <span class="aan-loading-bar"></span>
+              </div>
+              <p class="cursor-hint">Move your cursor across this field.</p>
+            </div>
+
+            <article class="state-copy-card">
+              <p>
+                Cursor response should look like attention gathering, not like a toy chasing the
+                pointer. Aan moves with lag, keeps the eyes readable, and settles back to center
+                when the user leaves.
+              </p>
+
+              <ul class="detail-list">
+                <li>Follow with resistance, not direct attachment.</li>
+                <li>Let the eyes move a little more than the body.</li>
+                <li>Keep the travel radius short.</li>
+                <li>Always return cleanly to center when the cursor exits.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-shell-light reveal" id="aan-placements">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Placement Catalog</p>
+            <h2>Aan only appears where the current app already has a meaningful AI surface.</h2>
+          </div>
+
+          <div class="placement-map">
+            <img
+              src="app-dashboard-latest.png"
+              alt="Latest Anarix dashboard screenshot showing the floating action island and right insights rail."
+            />
+
+            <div class="aan-avatar size-xs state-action-island placement-avatar placement-avatar-island" aria-hidden="true">
+              <span class="aan-halo"></span>
+              <span class="aan-orbit"></span>
+              <span class="aan-body">
+                <span class="aan-face">
+                  <span class="aan-eye eye-left"><span class="aan-pupil"></span></span>
+                  <span class="aan-eye eye-right"><span class="aan-pupil"></span></span>
+                </span>
+              </span>
+              <span class="aan-loading-bar"></span>
+            </div>
+
+            <div class="placement-pin pin-island">
+              <span>1</span>
+              <div>
+                <strong>Action island</strong>
+                <p>Primary quick entry</p>
+              </div>
+            </div>
+
+            <div class="placement-pin pin-rail">
+              <span>2</span>
+              <div>
+                <strong>Insights rail</strong>
+                <p>Surface next best action, not a permanent mascot home.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="surface-grid">
+            <article class="surface-card">
+              <div class="surface-card-head">
+                <span class="surface-badge surface-badge-legacy">Legacy screenshot</span>
+                <h3>Sidebar Ask Aan entry</h3>
+              </div>
+              <div class="surface-shot surface-shot-legacy">
+                <img src="app-dashboard-legacy.png" alt="Earlier Anarix dashboard screenshot showing the existing Ask Aan entry in the sidebar." />
+              </div>
+              <p>
+                The current sidebar already gives Aan a persistent pill entry. Keep that role calm
+                and utilitarian. It is the door into workspace mode, not a promotional badge.
+              </p>
+            </article>
+
+            <article class="surface-card">
+              <div class="surface-card-head">
+                <span class="surface-badge surface-badge-live">Live screenshot</span>
+                <h3>Floating action island</h3>
+              </div>
+              <div class="surface-shot surface-shot-island">
+                <img src="app-dashboard-latest.png" alt="Latest Anarix dashboard screenshot showing the floating action island." />
+                <div class="surface-shot-aan" aria-hidden="true">
+                  <div class="aan-avatar size-xs state-action-island">
+                    <span class="aan-halo"></span>
+                    <span class="aan-orbit"></span>
+                    <span class="aan-body">
+                      <span class="aan-face">
+                        <span class="aan-eye eye-left"><span class="aan-pupil"></span></span>
+                        <span class="aan-eye eye-right"><span class="aan-pupil"></span></span>
+                      </span>
+                    </span>
+                    <span class="aan-loading-bar"></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Source code confirms the island already expands on hover, can be dragged, and keeps
+                Ask Aan visible. This is the best home for the mascot&apos;s compact action state.
+              </p>
+            </article>
+
+            <article class="surface-card">
+              <div class="surface-card-head">
+                <span class="surface-badge surface-badge-source">Source-backed pattern</span>
+                <h3>Taskbar and compact button placement</h3>
+              </div>
+              <div class="surface-inference surface-inference-taskbar">
+                <div class="surface-topline">
+                  <span>AppTaskbar compact actions</span>
+                  <span class="surface-chip">islandOff</span>
+                </div>
+                <div class="taskbar-surface">
+                  <div class="taskbar-account">
+                    <span class="taskbar-status"></span>
+                    <span>Amazon account synced</span>
+                  </div>
+                  <div class="taskbar-actions">
+                    <button class="taskbar-button taskbar-button-primary" type="button">
+                      <span class="aan-mini-diamond"></span>
+                      <span>Ask Aan</span>
+                    </button>
+                    <button class="taskbar-button" type="button">
+                      <span class="taskbar-dot"></span>
+                      <span>Insights</span>
+                    </button>
+                    <button class="taskbar-button" type="button">
+                      <span class="taskbar-dot is-ink"></span>
+                      <span>Refresh</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The current taskbar already supports compact Ask Aan actions when the floating
+                island is off. Aan should compress into that existing button pattern instead of
+                creating a separate top-bar component family.
+              </p>
+            </article>
+
+            <article class="surface-card">
+              <div class="surface-card-head">
+                <span class="surface-badge surface-badge-source">Source-backed panel</span>
+                <h3>Copilot mode</h3>
+              </div>
+              <div class="surface-inference surface-inference-panel">
+                <div class="surface-topline">
+                  <span>Copilot</span>
+                  <span class="surface-chip">gemini-flash</span>
+                </div>
+                <div class="chat-message chat-message-assistant">
+                  Hello! I&apos;m Aan, your AI assistant for Anarix. I can help you analyze campaign
+                  performance, create rules, and optimize your advertising strategy.
+                </div>
+                <div class="chat-message chat-message-user">
+                  Generate a report for my last 7 days campaign performance.
+                </div>
+                <div class="copilot-anchor" aria-hidden="true">
+                  <div class="aan-avatar size-sm state-thinking-processing">
+                    <span class="aan-halo"></span>
+                    <span class="aan-orbit"></span>
+                    <span class="aan-body">
+                      <span class="aan-face">
+                        <span class="aan-eye eye-left"><span class="aan-pupil"></span></span>
+                        <span class="aan-eye eye-right"><span class="aan-pupil"></span></span>
+                      </span>
+                    </span>
+                    <span class="aan-loading-bar"></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The app already renders a dedicated copilot panel with context bar, conversation,
+                draft preview, and input. Aan should stay anchored to the prompt flow, not detached
+                in the panel chrome.
+              </p>
+            </article>
+
+            <article class="surface-card">
+              <div class="surface-card-head">
+                <span class="surface-badge surface-badge-source">Source-backed workspace</span>
+                <h3>Workspace mode</h3>
+              </div>
+              <div class="surface-inference surface-inference-workspace">
+                <div class="workspace-topbar">
+                  <span>Campaign Manager</span>
+                  <span class="surface-chip">Workspace</span>
+                </div>
+                <div class="workspace-canvas">
+                  <div class="workspace-chart"></div>
+                  <div class="workspace-panel"></div>
+                  <div class="workspace-aan-corner" aria-hidden="true">
+                    <div class="aan-avatar size-sm state-nav-presence">
+                      <span class="aan-halo"></span>
+                      <span class="aan-orbit"></span>
+                      <span class="aan-body">
+                        <span class="aan-face">
+                          <span class="aan-eye eye-left"><span class="aan-pupil"></span></span>
+                          <span class="aan-eye eye-right"><span class="aan-pupil"></span></span>
+                        </span>
+                      </span>
+                      <span class="aan-loading-bar"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Source code confirms a full-screen workspace route with mini sidebar, conversation,
+                input, and optional artifact viewer. If this extends into fullscreen review later,
+                Aan should inherit the same edge-docked logic.
+              </p>
+            </article>
+
+            <article class="surface-card">
+              <div class="surface-card-head">
+                <span class="surface-badge surface-badge-source">Source-backed trigger</span>
+                <h3>Selected text tooltip</h3>
+              </div>
+              <div class="surface-inference surface-inference-selection">
+                <div class="surface-topline">
+                  <span>AskAanTooltip</span>
+                  <span class="surface-chip">pendingPrompt</span>
+                </div>
+                <div class="selection-text-block">
+                  <p>
+                    The dashboard highlights <strong>wasted spend</strong>, <strong>budget pacing</strong>,
+                    and <strong>top campaign ROAS</strong> across the current page context.
+                  </p>
+                </div>
+                <button class="selection-pill" type="button">
+                  <span class="aan-mini-diamond"></span>
+                  <span>Ask Aan</span>
+                </button>
+              </div>
+              <p>
+                The app already shows an Ask Aan tooltip on selected text and sends the selection
+                into copilot as a pending prompt. This is the most precise cursor-adjacent entry in
+                the current product.
+              </p>
+            </article>
+
+            <article class="surface-card">
+              <div class="surface-card-head">
+                <span class="surface-badge surface-badge-source">Source-backed split view</span>
+                <h3>Artifact and result surfaces</h3>
+              </div>
+              <div class="surface-inference surface-inference-artifact">
+                <div class="surface-topline">
+                  <span>Artifact / report</span>
+                  <span class="surface-chip">currentArtifact</span>
+                </div>
+                <h4>Last 7 Day Campaign Performance Dashboard</h4>
+                <p class="artifact-meta">Amazon | Jan 1 - Jan 7, 2026</p>
+                <div class="artifact-list">
+                  <span>Total Ad Spend</span>
+                  <span>$10,973.60</span>
+                  <span>Overall ROAS</span>
+                  <span>3.37x</span>
+                  <span>Recommendation</span>
+                  <span>Increase budget on top 3 campaigns</span>
+                </div>
+                <div class="artifact-aan-row" aria-hidden="true">
+                  <div class="aan-avatar size-xs state-artifact-result">
+                    <span class="aan-halo"></span>
+                    <span class="aan-orbit"></span>
+                    <span class="aan-body">
+                      <span class="aan-face">
+                        <span class="aan-eye eye-left"><span class="aan-pupil"></span></span>
+                        <span class="aan-eye eye-right"><span class="aan-pupil"></span></span>
+                      </span>
+                    </span>
+                    <span class="aan-loading-bar"></span>
+                  </div>
+                  <span>Result anchored and ready to review</span>
+                </div>
+              </div>
+              <p>
+                The split panel already exists for reports, audits, and editable drafts. Once Aan
+                resolves into an artifact, keep the mascot smaller and calmer so the result becomes
+                primary.
+              </p>
+            </article>
+
+            <article class="surface-card">
+              <div class="surface-card-head">
+                <span class="surface-badge surface-badge-source">Source-backed pattern</span>
+                <h3>Secondary button family</h3>
+              </div>
+              <div class="button-family">
+                <button class="utility-button is-primary" type="button">
+                  <span class="aan-mini-diamond"></span>
+                  <span>Ask Aan</span>
+                </button>
+                <button class="utility-button" type="button">
+                  <span class="aan-mini-diamond is-blue"></span>
+                  <span>Review with Aan</span>
+                </button>
+                <button class="utility-button" type="button">
+                  <span class="aan-mini-diamond is-ink"></span>
+                  <span>Open in Aan</span>
+                </button>
+              </div>
+              <p>
+                The settings pages already document compact Ask Aan button variants. Secondary
+                buttons can borrow that structure, but the mascot should stay small and never become
+                decorative chrome.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-shell-dark reveal" id="aan-rules">
+        <div class="section-inner">
+          <div class="section-heading section-heading-dark">
+            <p class="eyebrow">Integration Rules</p>
+            <h2>The manual ends with an implementation-ready spec for where Aan appears, how it behaves, and when it should leave.</h2>
+          </div>
+
+          <div class="rules-layout">
+            <div class="matrix-card">
+              <div class="surface-topline surface-topline-dark">
+                <span>Surface matrix</span>
+                <span class="inference-badge">Based on local source + screenshots + live bundle</span>
+              </div>
+              <table class="surface-matrix">
+                <thead>
+                  <tr>
+                    <th>Surface</th>
+                    <th>Trigger</th>
+                    <th>Allowed states</th>
+                    <th>Exit behavior</th>
+                  </tr>
+                </thead>
+                <tbody id="surface-matrix-body"></tbody>
+              </table>
+            </div>
+
+            <div class="rules-stack">
+              <article class="rule-note-card">
+                <p class="kicker">Eye behavior</p>
+                <p>Eyes should glance, settle, and blink with long pauses. Never let them chatter faster than the interface.</p>
+              </article>
+
+              <article class="rule-note-card">
+                <p class="kicker">Pointer response</p>
+                <p>Follow the cursor with resistance and a small radius. Reset immediately when the pointer leaves the field.</p>
+              </article>
+
+              <article class="rule-note-card">
+                <p class="kicker">Color logic</p>
+                <p>Coral leads. Blue and black appear only for higher-cognition or embedded-system states where contrast is needed.</p>
+              </article>
+
+              <article class="rule-note-card">
+                <p class="kicker">Presence / absence</p>
+                <p>Aan should be visible only when the user is entering, using, or reviewing an AI-assisted moment. Otherwise, the app should return to pure Anarix UI.</p>
+              </article>
+
+              <article class="rule-note-card">
+                <p class="kicker">App modes already present</p>
+                <p>The current source already defines <code>closed</code>, <code>copilot</code>, <code>split</code>, and <code>workspace</code>. Mascot behavior should map onto those modes, not invent a parallel navigation model.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="integration-footer-grid">
+            <article class="signal-card">
+              <p class="kicker">Source and bundle signals already present</p>
+              <div class="signal-list" id="bundle-signals"></div>
+            </article>
+
+            <article class="signal-card">
+              <p class="kicker">Do not</p>
+              <ul class="detail-list">
+                <li>Do not place Aan on every card, chart, or metric tile.</li>
+                <li>Do not let the eyes chatter faster than the interface.</li>
+                <li>Do not swap the app into a new mascot palette.</li>
+                <li>Do not keep Aan visible when the AI surface is closed.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-      <p>Anarix Brand Manual / Phase 1</p>
+      <p>Anarix Brand Manual / Phase 1 + Phase 2 / Aan</p>
     </footer>
 
     <script
