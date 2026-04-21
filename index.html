@@ -3,528 +3,435 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anarix + Aan Brand Manual</title>
+    <title>Anarix Brand Manual | Phase 1</title>
     <meta
       name="description"
-      content="A landing-page brand manual for Anarix and Aan covering philosophy, logo usage, AI motion, and the system that ties them together."
+      content="Anarix phase 1 brand manual documenting the exact official mark, core colors, usage rules, and unchanged logo animation."
     />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="anarix-symbol.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="header-brand" href="#top">
-        <span class="header-brand-label">Landing Manual</span>
-        <strong>Anarix + Aan</strong>
+    <header class="site-header" id="site-header">
+      <a class="brand-home" href="#top" aria-label="Anarix brand manual home">
+        <span class="brand-home-mark" aria-hidden="true">
+          <img src="anarix-symbol.svg" alt="" />
+        </span>
+        <span class="brand-home-copy">
+          <strong>Anarix</strong>
+          <span>Phase 1 brand manual</span>
+        </span>
       </a>
 
       <nav class="site-nav" aria-label="Primary">
-        <a href="#identity">Identity</a>
-        <a href="#logo-usage">Logos</a>
+        <a href="#color">Color</a>
+        <a href="#mark">Mark</a>
+        <a href="#usage">Usage</a>
+        <a href="#dont">Do Not</a>
         <a href="#motion">Motion</a>
-        <a href="#system">System</a>
-        <a href="#integration">Integration</a>
+        <a href="#assets">Assets</a>
       </nav>
 
-      <a class="header-cta" href="#logo-usage">Dark / Light Rules</a>
+      <a class="header-cta" href="#assets">Download source files</a>
     </header>
 
     <main id="top">
       <section class="hero">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Anarix + Aan Brand Manual</p>
-
-          <div class="brand-lockup">
-            <span class="lockup-anarix">ANARIX</span>
-            <span class="lockup-divider" aria-hidden="true"></span>
-            <span class="lockup-aan">Aan by Anarix</span>
-          </div>
-
-          <h1>One permanent brand system for the operating body and the intelligence above it.</h1>
-
-          <p class="hero-summary">
-            Anarix comes from analytics + metrics. Aan is the coral-diamond intelligence that
-            connects with every part of the system to understand, analyze, and take action.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-solid" href="#logo-usage">Review logo usage</a>
-            <a class="button button-ghost" href="#motion">See Aan motion</a>
-          </div>
-
-          <div class="hero-meta">
-            <p>
-              <strong>Anarix</strong> is the body, platform, structure, and operating layer.
+        <div class="hero-inner">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Phase 1 / Anarix Only</p>
+            <h1>The exact logo, symbol, and motion reference for Anarix.</h1>
+            <p class="hero-summary">
+              This manual documents the official Anarix logo, the standalone symbol, the exact
+              asset colors taken from the supplied SVG files, approved light and dark usage, and
+              the unchanged loader animation used as the motion reference.
             </p>
-            <p>
-              <strong>Aan</strong> is the brain, node, guide, and action layer that stays on top
-              of every decision.
-            </p>
-          </div>
-        </div>
 
-        <div class="hero-stage reveal" id="hero-stage" aria-hidden="true">
-          <div class="stage-grid"></div>
-          <div class="stage-glow"></div>
-          <div class="stage-label stage-label-left">Analytics</div>
-          <div class="stage-label stage-label-right">Metrics</div>
+            <div class="hero-actions">
+              <a class="button button-solid" href="#usage">Review usage rules</a>
+              <a class="button button-ghost" href="#motion">See exact animation</a>
+            </div>
 
-          <div class="pillar-stack">
-            <span class="stage-pillar stage-pillar-left"></span>
-            <span class="stage-pillar stage-pillar-right"></span>
+            <ul class="hero-facts">
+              <li>One official full-logo SVG used unchanged.</li>
+              <li>One official standalone-symbol SVG used unchanged.</li>
+              <li>One official Lottie JSON animation rendered untouched.</li>
+            </ul>
           </div>
 
-          <div class="presence-anchor hero-anchor" id="hero-mascot">
-            <div class="aan-presence state-idle" id="hero-presence">
-              <span class="presence-halo"></span>
-              <span class="presence-ring"></span>
-              <span class="presence-pillar presence-pillar-left"></span>
-              <span class="presence-pillar presence-pillar-right"></span>
-              <span class="presence-diamond"></span>
-              <span class="presence-bar"></span>
+          <div class="hero-stage reveal" aria-hidden="true">
+            <div class="hero-orbit hero-orbit-large"></div>
+            <div class="hero-orbit hero-orbit-small"></div>
+            <div class="hero-grid"></div>
+            <div class="hero-stage-frame">
+              <p class="stage-label">Official source logo</p>
+              <img class="hero-mark" src="anarix-logo.svg" alt="" />
+              <p class="hero-stage-note">
+                The supplied full logo and the supplied standalone symbol are the only approved
+                phase 1 identity files.
+              </p>
             </div>
           </div>
-
-          <div class="module-chip module-profit">Profitability</div>
-          <div class="module-chip module-ads">Advertising</div>
-          <div class="module-chip module-amc">AMC</div>
-          <div class="module-chip module-dayparting">Day Parting</div>
-          <div class="module-chip module-bi">BI</div>
-          <div class="module-chip module-settings">Settings</div>
-
-          <p class="stage-note">
-            Coral belongs to Aan. Blue holds the system. The diamond sits above the pillars and
-            turns structure into intelligence.
-          </p>
         </div>
       </section>
 
-      <section class="section-shell section-shell-light reveal" id="identity">
-        <div class="section-heading">
-          <p class="eyebrow">Identity Roles</p>
-          <h2>Design the company and the AI as one system with two distinct jobs.</h2>
-        </div>
-
-        <div class="identity-columns">
-          <article class="identity-panel">
-            <p class="kicker">Anarix</p>
-            <h3>The marketplace intelligence body.</h3>
-            <p>
-              Use Anarix when speaking about the company, the operating system, the analytical
-              foundation, and the product surface that helps brands grow profitably across Amazon
-              and Walmart.
-            </p>
-            <ul class="detail-list">
-              <li>Represents structure, reliability, and the operating layer.</li>
-              <li>Leads dashboards, settings, reporting, and system trust.</li>
-              <li>Holds the visual discipline of the product.</li>
-              <li>Stays calm, measured, and infrastructure-first.</li>
-            </ul>
-          </article>
-
-          <article class="identity-panel identity-panel-aan">
-            <p class="kicker">Aan</p>
-            <h3>The coral intelligence that lives above action.</h3>
-            <p>
-              Aan inherits the diamond from the Anarix symbol and turns it into a distinct AI
-              presence. If Anarix is the body, Aan is the brain connected to every node, every
-              screen, and every decision path.
-            </p>
-            <ul class="detail-list">
-              <li>Appears in AI entry points, analysis moments, and guided action flows.</li>
-              <li>Uses coral as its signature color, never as a general product accent.</li>
-              <li>Responds to the cursor with awareness, not playfulness.</li>
-              <li>Morphs when processing, then resolves into clarity.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-shell section-shell-ink reveal">
-        <div class="section-heading section-heading-ink">
-          <p class="eyebrow">Philosophy</p>
-          <h2>Analytics + metrics build Anarix. Meaning, dignity, and action give Aan depth.</h2>
-        </div>
-
-        <div class="philosophy-grid">
-          <div class="philosophy-copy">
-            <p class="formula-line">Analytics + Metrics = Anarix</p>
-            <p>
-              The parent brand should feel exact, operational, and durable. It is the system that
-              makes complexity legible and turns marketplace data into decisions.
-            </p>
-            <p>
-              Aan is the coral diamond docking on top of those two pillars. Read literally, it is
-              the node sitting above analysis and metrics. Read behaviorally, it is the AI that
-              stays on top of every action.
-            </p>
+      <section class="section-shell section-shell-light reveal" id="color">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Color System</p>
+            <h2>The supplied assets define coral, blue, and the dark logo ink.</h2>
           </div>
 
-          <div class="meaning-stack">
+          <div class="color-layout">
+            <div class="color-story">
+              <p>
+                The full logo includes a dedicated dark ink for the wordmark, alongside the coral
+                and blue used in the geometric mark. Any paper, slate, or ink tones used elsewhere
+                in this manual are supportive presentation neutrals, not new brand colors.
+              </p>
+            </div>
+
+            <div class="swatch-list" role="list" aria-label="Primary brand colors">
+              <article class="swatch-card" role="listitem">
+                <div class="swatch-block swatch-coral"></div>
+                <p class="kicker">Primary Coral</p>
+                <h3>#F26E77</h3>
+                <p>Use exactly as supplied inside the mark. Do not shift it warmer, cooler, or softer.</p>
+              </article>
+
+              <article class="swatch-card" role="listitem">
+                <div class="swatch-block swatch-blue"></div>
+                <p class="kicker">Primary Blue</p>
+                <h3>#4A62D9</h3>
+                <p>Use exactly as supplied inside the mark. Do not brighten, mute, or gradient-fill it.</p>
+              </article>
+
+              <article class="swatch-card" role="listitem">
+                <div class="swatch-block swatch-ink"></div>
+                <p class="kicker">Logo Ink</p>
+                <h3>#1D252D</h3>
+                <p>Use exactly as supplied for the full-logo wordmark. Do not reverse or soften it.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-shell-dark reveal" id="mark">
+        <div class="section-inner">
+          <div class="section-heading section-heading-dark">
+            <p class="eyebrow">Logo And Symbol</p>
+            <h2>The full logo and the standalone symbol are separate approved assets.</h2>
+          </div>
+
+          <div class="mark-layout">
+            <div class="asset-showcase-grid">
+              <figure class="source-mark">
+                <div class="asset-frame asset-frame-logo">
+                  <img src="anarix-logo.svg" alt="Official Anarix full logo" />
+                </div>
+                <figcaption>Primary logo</figcaption>
+              </figure>
+
+              <figure class="source-mark">
+                <div class="clearspace-frame">
+                  <span class="clearspace-tag clearspace-tag-top">1x</span>
+                  <span class="clearspace-tag clearspace-tag-right">1x</span>
+                  <span class="clearspace-tag clearspace-tag-bottom">1x</span>
+                  <span class="clearspace-tag clearspace-tag-left">1x</span>
+                  <img src="anarix-symbol.svg" alt="Official Anarix symbol shown inside its clear space zone" />
+                </div>
+                <figcaption>Standalone symbol</figcaption>
+              </figure>
+            </div>
+
+            <div class="rule-stack">
+              <article class="rule-block">
+                <p class="kicker">Definition</p>
+                <h3>Use the full logo when the name must appear. Use the symbol when space is tight.</h3>
+                <p>
+                  Both SVG files are official and both must remain exact. Do not redraw the logo,
+                  separate the icon from the wordmark inside the full lockup, or alter the
+                  standalone symbol geometry.
+                </p>
+              </article>
+
+              <article class="rule-block">
+                <p class="kicker">Clear Space</p>
+                <p>
+                  Maintain at least <strong>1x</strong> clear space around the logo or symbol, where
+                  <strong>x</strong> equals the height of the coral diamond.
+                </p>
+              </article>
+
+              <article class="rule-block">
+                <p class="kicker">Minimum Digital Size</p>
+                <p>
+                  Do not reproduce the full logo below <strong>160px</strong> wide or the symbol
+                  below <strong>48px</strong> wide on screen.
+                </p>
+              </article>
+
+              <article class="rule-block">
+                <p class="kicker">Background Control</p>
+                <p>
+                  Place the full logo directly on light surfaces, or inside a light carrier when
+                  it must appear over dark surroundings. The standalone symbol may sit directly on
+                  light or dark surfaces when contrast stays clear.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-shell-light reveal" id="usage">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Approved Usage</p>
+            <h2>Light and dark variation changes the setting, not the artwork itself.</h2>
+          </div>
+
+          <div class="usage-grid">
+            <article class="usage-surface usage-surface-light">
+              <p class="usage-label">Logo on light</p>
+              <div class="usage-stage usage-stage-logo">
+                <img src="anarix-logo.svg" alt="Official Anarix logo on a light background" />
+              </div>
+              <p class="usage-note">
+                Use the full logo directly on paper, presentations, documentation, and clean
+                editorial surfaces.
+              </p>
+            </article>
+
+            <article class="usage-surface usage-surface-dark">
+              <p class="usage-label">Logo on dark context</p>
+              <div class="usage-stage usage-stage-logo">
+                <div class="logo-carrier">
+                  <img src="anarix-logo.svg" alt="Official Anarix logo on a light carrier over a dark background" />
+                </div>
+              </div>
+              <p class="usage-note">
+                Keep the logo exact by placing it on a light carrier when the surrounding surface
+                is dark.
+              </p>
+            </article>
+
+            <article class="usage-surface usage-surface-light">
+              <p class="usage-label">Symbol on light</p>
+              <div class="usage-stage usage-stage-symbol">
+                <img src="anarix-symbol.svg" alt="Official Anarix symbol on a light background" />
+              </div>
+              <p class="usage-note">
+                Use the standalone symbol for tighter spaces where the full name is not required.
+              </p>
+            </article>
+
+            <article class="usage-surface usage-surface-dark">
+              <p class="usage-label">Symbol on dark</p>
+              <div class="usage-stage usage-stage-symbol">
+                <img src="anarix-symbol.svg" alt="Official Anarix symbol on a dark background" />
+              </div>
+              <p class="usage-note">
+                The symbol may sit directly on deep navy or slate surfaces when both fills remain
+                clearly visible.
+              </p>
+            </article>
+          </div>
+
+          <div class="background-guidance">
             <div>
-              <p class="meaning-label">Aan as a name</p>
-              <h3>Self-respect, esteem, grace, peace, and the sun.</h3>
-            </div>
-            <ul class="meaning-list">
-              <li>Dignity and self-respect reinforce trust and composure.</li>
-              <li>The sun suggests guidance, visibility, and being above the horizon line.</li>
-              <li>Grace and peace keep the AI from feeling aggressive or noisy.</li>
-              <li>Wisdom and analysis connect naturally with Anarix's analytical core.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="symbol-legend">
-          <div class="legend-line">
-            <span class="legend-mark legend-pillars"></span>
-            <p>
-              The two lower pillars represent analysis and metrics holding the system upright.
-            </p>
-          </div>
-          <div class="legend-line">
-            <span class="legend-mark legend-diamond"></span>
-            <p>The coral diamond is Aan: the node, the brain, the intelligence above action.</p>
-          </div>
-          <div class="legend-line">
-            <span class="legend-mark legend-network"></span>
-            <p>
-              Together they imply a connected body where every part can be understood and acted on.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-shell section-shell-light reveal" id="logo-usage">
-        <div class="section-heading">
-          <p class="eyebrow">Logo Usage</p>
-          <h2>Dark and light usage rules for both Anarix and Aan.</h2>
-        </div>
-
-        <div class="logo-family">
-          <div class="logo-family-heading">
-            <p class="kicker">Parent Brand</p>
-            <h3>Anarix logo usage</h3>
-            <p>
-              Use Anarix for company communications, platform-level surfaces, product chrome, and
-              non-AI system touchpoints.
-            </p>
-          </div>
-
-          <div class="logo-usage-grid">
-            <article class="usage-surface usage-surface-light">
-              <p class="usage-label">Anarix on light</p>
-              <img src="anarix-logo-light.svg" alt="Anarix logo on a light surface" />
-              <p class="usage-note">
-                Preferred for warm paper, decks, documentation, and light landing sections.
-              </p>
-            </article>
-
-            <article class="usage-surface usage-surface-dark">
-              <p class="usage-label">Anarix on dark</p>
-              <img src="anarix-logo-dark.svg" alt="Anarix logo on a dark surface" />
-              <p class="usage-note">
-                Use on midnight, deep navy, or dark application surfaces where the wordmark must
-                stay crisp and calm.
-              </p>
-            </article>
-          </div>
-        </div>
-
-        <div class="logo-family">
-          <div class="logo-family-heading">
-            <p class="kicker">AI Layer</p>
-            <h3>Aan by Anarix logo usage</h3>
-            <p>
-              Use Aan by Anarix for AI entry points, guided analysis, action surfaces, and brand
-              moments where the coral intelligence should be explicitly named.
-            </p>
-          </div>
-
-          <div class="logo-usage-grid">
-            <article class="usage-surface usage-surface-light">
-              <p class="usage-label">Aan on light</p>
-              <img src="aan-logo-light.svg" alt="Aan by Anarix logo on a light surface" />
-              <p class="usage-note">
-                Use when the AI is present but the surrounding surface remains editorial or light.
-              </p>
-            </article>
-
-            <article class="usage-surface usage-surface-dark">
-              <p class="usage-label">Aan on dark</p>
-              <img src="aan-logo-dark.svg" alt="Aan by Anarix logo on a dark surface" />
-              <p class="usage-note">
-                Preferred for AI workspace headers, floating action islands, and command surfaces.
-              </p>
-            </article>
-          </div>
-        </div>
-
-        <div class="usage-rules">
-          <article>
-            <h4>Clear space</h4>
-            <p>Keep at least one diamond width of breathing room around every approved lockup.</p>
-          </article>
-          <article>
-            <h4>Color authority</h4>
-            <p>Coral is reserved for Aan and AI emphasis. Do not turn it into a general CTA color.</p>
-          </article>
-          <article>
-            <h4>Background pairing</h4>
-            <p>Choose the dark or light version based on contrast first, never based on mood alone.</p>
-          </article>
-          <article>
-            <h4>Compact usage</h4>
-            <p>Use symbol-only marks for micro UI, AI launchers, tabs, and compact navigation.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-shell section-shell-slate reveal" id="system">
-        <div class="section-heading section-heading-ink">
-          <p class="eyebrow">System Rules</p>
-          <h2>Keep the product disciplined. Let Aan add intelligence, not chaos.</h2>
-        </div>
-
-        <div class="system-grid">
-          <article class="system-panel">
-            <p class="kicker">Color Governance</p>
-            <h3>Preserve the core Anarix product palette.</h3>
-            <div class="swatch-stack">
-              <div class="swatch-row">
-                <span class="swatch swatch-background"></span>
-                <div>
-                  <strong>Periwinkle product base</strong>
-                  <p>Use the established light and dark product palette for system trust.</p>
-                </div>
-              </div>
-              <div class="swatch-row">
-                <span class="swatch swatch-primary"></span>
-                <div>
-                  <strong>Blue as structure</strong>
-                  <p>Use blue for product actions, navigation, links, and parent-brand stability.</p>
-                </div>
-              </div>
-              <div class="swatch-row">
-                <span class="swatch swatch-coral"></span>
-                <div>
-                  <strong>Coral as Aan-only accent</strong>
-                  <p>Reserve coral for AI launchers, intelligence feedback, and mascot moments.</p>
-                </div>
-              </div>
-              <div class="swatch-row">
-                <span class="swatch swatch-gradient"></span>
-                <div>
-                  <strong>Gradient as AI surface only</strong>
-                  <p>Use the coral-to-blue gradient inside Aan environments, never across routine analytics UI.</p>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="system-panel">
-            <p class="kicker">Typography</p>
-            <h3>Let Anarix stay exact. Let Aan feel human.</h3>
-            <div class="type-stack">
-              <div>
-                <p class="type-label">Display</p>
-                <p class="type-sample type-sample-display">Editorial clarity for brand statements.</p>
-              </div>
-              <div>
-                <p class="type-label">Interface</p>
-                <p class="type-sample type-sample-ui">Operational language for product labels and UI.</p>
-              </div>
-              <div>
-                <p class="type-label">Aan accent</p>
-                <p class="type-sample type-sample-aan">Aan</p>
-              </div>
-            </div>
-            <ul class="detail-list detail-list-compact">
-              <li>Keep body copy active, short, and exact.</li>
-              <li>Use decorative script only for Aan signatures and intentional brand moments.</li>
-              <li>Never let expressive type bleed into dense data surfaces.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section-shell section-shell-ink reveal" id="motion">
-        <div class="section-heading section-heading-ink">
-          <p class="eyebrow">Aan Motion</p>
-          <h2>Aan should feel aware, intelligent, and responsive without turning into a toy.</h2>
-        </div>
-
-        <div class="motion-layout">
-          <div class="motion-stage" id="motion-stage">
-            <div class="motion-grid"></div>
-            <div class="motion-rings"></div>
-
-            <div class="presence-anchor motion-anchor" id="motion-anchor" aria-hidden="true">
-              <div class="aan-presence state-idle" id="motion-presence">
-                <span class="presence-halo"></span>
-                <span class="presence-ring"></span>
-                <span class="presence-pillar presence-pillar-left"></span>
-                <span class="presence-pillar presence-pillar-right"></span>
-                <span class="presence-diamond"></span>
-                <span class="presence-bar"></span>
-              </div>
-            </div>
-
-            <div class="motion-readout">
-              <span id="motion-state-chip">Idle</span>
-              <p id="motion-title">Aan waits above the system, calm and ready.</p>
-            </div>
-          </div>
-
-          <aside class="motion-copy">
-            <p class="kicker">Interaction States</p>
-            <div class="motion-controls" role="tablist" aria-label="Aan motion states">
-              <button class="motion-button is-active" data-motion-state="idle" type="button">
-                Idle
-              </button>
-              <button class="motion-button" data-motion-state="cursor" type="button">
-                Cursor
-              </button>
-              <button class="motion-button" data-motion-state="think" type="button">
-                Think
-              </button>
-              <button class="motion-button" data-motion-state="loading" type="button">
-                Loading
-              </button>
-              <button class="motion-button" data-motion-state="action" type="button">
-                Action
-              </button>
-            </div>
-
-            <p class="motion-note" id="motion-copy">
-              Idle is a suspended, balanced state. Aan should look like it is aware of the system
-              even when it is not actively doing anything.
-            </p>
-
-            <ul class="detail-list" id="motion-points">
-              <li>Use a subtle float, not a bounce.</li>
-              <li>Keep the diamond above the pillars even when the state changes.</li>
-              <li>Make presence legible before adding flourish.</li>
-            </ul>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section-shell section-shell-light reveal" id="integration">
-        <div class="section-heading">
-          <p class="eyebrow">Integration</p>
-          <h2>Aan connects with every Anarix function, but Anarix remains the system users trust.</h2>
-        </div>
-
-        <div class="integration-grid">
-          <div class="intelligence-map">
-            <div class="map-column">
-              <div class="map-node map-node-left">Advertising</div>
-              <div class="map-node map-node-left">Profitability</div>
-              <div class="map-node map-node-left">AMC</div>
-            </div>
-
-            <div class="map-core">
-              <span class="map-core-label">Aan by Anarix</span>
-              <strong>Understands</strong>
-              <strong>Analyzes</strong>
-              <strong>Takes action</strong>
-            </div>
-
-            <div class="map-column">
-              <div class="map-node map-node-right">BI</div>
-              <div class="map-node map-node-right">Day Parting</div>
-              <div class="map-node map-node-right">Settings</div>
-            </div>
-          </div>
-
-          <div class="integration-copy">
-            <div class="integration-block">
-              <p class="kicker">Where Anarix stays primary</p>
-              <ul class="detail-list detail-list-compact">
-                <li>Dashboard chrome, data tables, system settings, and reporting.</li>
-                <li>Platform trust, documentation, and company-facing communication.</li>
-                <li>Every surface where structure matters more than assistance.</li>
+              <p class="kicker">Use on</p>
+              <ul class="detail-list">
+                <li>Clean paper tones for the full logo</li>
+                <li>Deep ink and navy surfaces for the symbol</li>
+                <li>Simple fields with stable contrast</li>
               </ul>
             </div>
-
-            <div class="integration-block">
-              <p class="kicker">Where Aan appears</p>
-              <ul class="detail-list detail-list-compact">
-                <li>Ask Aan launchers, command surfaces, side workspaces, and artifacts.</li>
-                <li>Suggestions, drafts, approvals, guided explanations, and smart actions.</li>
-                <li>Any moment where intelligence is being felt, not just referenced.</li>
+            <div>
+              <p class="kicker">Avoid on</p>
+              <ul class="detail-list">
+                <li>Photos or dashboards behind the logo or symbol</li>
+                <li>Direct dark placement for the full logo wordmark</li>
+                <li>Any background that reduces edge clarity</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="surface-strip">
-              <span>Floating action island</span>
-              <span>Workspace sidebar</span>
-              <span>Artifact review</span>
-              <span>Command palette</span>
+      <section class="section-shell section-shell-warm reveal" id="dont">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Incorrect Use</p>
+            <h2>Every example below is intentionally wrong and should never be used in production.</h2>
+          </div>
+
+          <div class="misuse-grid">
+            <article class="misuse-item">
+              <div class="misuse-stage misuse-stage-stretch">
+                <img src="anarix-logo.svg" alt="Incorrect stretched Anarix logo example" />
+              </div>
+              <p>Do not stretch or compress the geometry.</p>
+            </article>
+
+            <article class="misuse-item">
+              <div class="misuse-stage misuse-stage-rotate">
+                <img src="anarix-logo.svg" alt="Incorrect rotated Anarix logo example" />
+              </div>
+              <p>Do not rotate the mark.</p>
+            </article>
+
+            <article class="misuse-item">
+              <div class="misuse-stage misuse-stage-recolor">
+                <img src="anarix-logo.svg" alt="Incorrect recolored Anarix logo example" />
+              </div>
+              <p>Do not recolor, tint, or monochrome the mark.</p>
+            </article>
+
+            <article class="misuse-item">
+              <div class="misuse-stage misuse-stage-crop">
+                <img src="anarix-logo.svg" alt="Incorrect cropped Anarix logo example" />
+              </div>
+              <p>Do not crop or partially reveal the mark.</p>
+            </article>
+
+            <article class="misuse-item">
+              <div class="misuse-stage misuse-stage-glow">
+                <img src="anarix-logo.svg" alt="Incorrect glowing Anarix logo example" />
+              </div>
+              <p>Do not add glow, shadow, or special effects.</p>
+            </article>
+
+            <article class="misuse-item">
+              <div class="misuse-stage misuse-stage-contrast">
+                <img src="anarix-logo.svg" alt="Incorrect low contrast Anarix logo example" />
+              </div>
+              <p>Do not place the mark on low-contrast backgrounds.</p>
+            </article>
+
+            <article class="misuse-item">
+              <div class="misuse-stage misuse-stage-tight">
+                <img src="anarix-logo.svg" alt="Incorrect cramped clear space Anarix logo example" />
+              </div>
+              <p>Do not violate the required clear space.</p>
+            </article>
+
+            <article class="misuse-item">
+              <div class="misuse-stage misuse-stage-busy">
+                <img src="anarix-logo.svg" alt="Incorrect busy background Anarix logo example" />
+              </div>
+              <p>Do not place the mark on busy analytical textures.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-shell-dark reveal" id="motion">
+        <div class="section-inner">
+          <div class="section-heading section-heading-dark">
+            <p class="eyebrow">Logo Animation</p>
+            <h2>The motion reference is the supplied Lottie file rendered unchanged.</h2>
+          </div>
+
+          <div class="motion-layout">
+            <div class="motion-stage">
+              <div id="logo-animation" class="logo-animation" aria-label="Official Anarix logo animation"></div>
+            </div>
+
+            <div class="motion-copy">
+              <p>
+                The animation shown here comes from the checked-in JSON asset with no redraw, no
+                timing edits, no color edits, and no CSS recreation of the motion.
+              </p>
+
+              <dl class="spec-list">
+                <div>
+                  <dt>Lottie</dt>
+                  <dd>v5.9.0</dd>
+                </div>
+                <div>
+                  <dt>Frame Rate</dt>
+                  <dd>60fps</dd>
+                </div>
+                <div>
+                  <dt>Duration</dt>
+                  <dd>120 frames / 2 seconds</dd>
+                </div>
+                <div>
+                  <dt>Canvas</dt>
+                  <dd>149 × 159</dd>
+                </div>
+              </dl>
+
+              <ul class="detail-list">
+                <li>No redraw.</li>
+                <li>No easing edits.</li>
+                <li>No color edits.</li>
+                <li>No timing edits.</li>
+                <li>No substitute animation system.</li>
+              </ul>
+
+              <div class="motion-actions">
+                <button class="button button-solid" id="replay-animation" type="button">
+                  Replay animation
+                </button>
+                <a class="button button-ghost" href="anarix-logo-loader.json" download>
+                  Download JSON
+                </a>
+              </div>
+
+              <p class="motion-status" id="motion-status">Loading official source animation…</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section-shell section-shell-warm reveal">
-        <div class="section-heading">
-          <p class="eyebrow">Voice and Conduct</p>
-          <h2>Sound like a capable guide, not a noisy assistant.</h2>
-        </div>
-
-        <div class="voice-layout">
-          <article class="voice-block">
-            <p class="kicker">Anarix voice</p>
-            <h3>Composed, exact, operational.</h3>
-            <p>
-              Use Anarix voice for system orientation, reporting, configuration, and platform-level
-              communication. It should feel stable, clear, and quietly authoritative.
-            </p>
-          </article>
-
-          <article class="voice-block voice-block-aan">
-            <p class="kicker">Aan voice</p>
-            <h3>Warm, observant, and action-ready.</h3>
-            <p>
-              Aan should guide with respect. It can feel intelligent and human, but it should never
-              sound overconfident, theatrical, or casual about real decisions.
-            </p>
-          </article>
-        </div>
-
-        <div class="voice-examples">
-          <div>
-            <p class="voice-label">Do say</p>
-            <blockquote>
-              I found three profitable actions to review. Start with the one that protects margin.
-            </blockquote>
+      <section class="section-shell section-shell-light reveal" id="assets">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Asset Handoff</p>
+            <h2>These two files are the phase 1 source-of-truth package for future design work.</h2>
           </div>
-          <div>
-            <p class="voice-label">Avoid</p>
-            <blockquote>
-              I totally fixed everything for you. This one is a no-brainer, just do it.
-            </blockquote>
-          </div>
-        </div>
-      </section>
 
-      <section class="section-shell section-shell-final reveal">
-        <div class="finale-copy">
-          <p class="eyebrow">Permanent Reference</p>
-          <h2>This manual should stay with the company, survive redesigns, and keep every future designer aligned.</h2>
-          <p>
-            The goal is not a one-time moodboard. The goal is a living inheritance system for how
-            Anarix looks, how Aan behaves, and how both brands stay coherent as the product grows.
+          <div class="asset-grid">
+            <a class="asset-link" href="anarix-logo.svg" download>
+              <span class="asset-eyebrow">Official logo</span>
+              <strong>anarix-logo.svg</strong>
+              <span>Use this exact SVG when the Anarix name must appear in the lockup.</span>
+            </a>
+
+            <a class="asset-link" href="anarix-symbol.svg" download>
+              <span class="asset-eyebrow">Official symbol</span>
+              <strong>anarix-symbol.svg</strong>
+              <span>Use this exact SVG as the standalone Anarix symbol in tighter spaces.</span>
+            </a>
+
+            <a class="asset-link" href="anarix-logo-loader.json" download>
+              <span class="asset-eyebrow">Official motion</span>
+              <strong>anarix-logo-loader.json</strong>
+              <span>Use this exact 2-second Lottie file for logo animation references.</span>
+            </a>
+          </div>
+
+          <p class="asset-footnote">
+            Use the checked-in logo, symbol, and motion files exactly as supplied. No alternate
+            redraws are defined in this manual.
           </p>
-          <a class="button button-solid" href="#top">Return to the top</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Built as the first landing-page brand manual for Anarix and Aan by Anarix.</p>
+      <p>Anarix Brand Manual / Phase 1</p>
     </footer>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
