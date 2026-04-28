@@ -2,7 +2,7 @@
 
 This repo now ships the Anarix brand manual as a lightweight Vite + React single-page app.
 
-Phase 1 remains the locked Anarix foundation:
+The manual documents the locked Anarix foundation:
 
 - official full logo
 - official standalone symbol
@@ -10,21 +10,17 @@ Phase 1 remains the locked Anarix foundation:
 - approved light and dark usage
 - exact Lottie loader source
 
-Phase 2 extends that same manual with an interactive Aan chapter:
-
-- Aan meaning and full form
-- live mascot state demos
-- guided assistant flow inspired by Aria-style system behavior
-- source-backed placement mockups tied to the current Anarix app
-- implementation-ready surface and motion rules
+It also includes the current Aan chapter implementation used for mascot behavior, state morphs, and in-product reference mockups.
 
 ## Project structure
 
 - `index.html` - Vite entry shell
-- `src/App.tsx` - single-scroll manual composition
-- `src/components/` - Aan mascot, guided demo, placement catalog, and loader bridge
-- `src/data.ts` - shared state contract and manual content model
-- `src/styles.css` - page styling, mascot motion, and demo surfaces
+- `src/App.tsx` - single-scroll Anarix manual composition
+- `src/components/AnarixLoader.tsx` - official loader bridge
+- `src/components/Aan.tsx` - Aan mascot behavior and morph states
+- `src/components/Diamond.tsx` - compact diamond reference used inside the Aan mockup section
+- `src/data.ts` - brand colors and usage-rule content
+- `src/styles.css` - page styling and layout
 - `anarix-logo.svg` - official phase 1 Anarix full logo
 - `anarix-symbol.svg` - official phase 1 Anarix standalone symbol
 - `anarix-logo-loader.json` - official phase 1 logo animation source
@@ -45,5 +41,5 @@ npm run build
 ## Notes
 
 - The official Anarix assets are preserved exactly and are not redrawn by the React rebuild.
-- The Aan chapter is a brand-manual demo layer, not a direct implementation inside the live app.
-- Placement guidance is based on the analyzed Anarix app source and screenshots stored in this repo.
+- The full logo should stay on a light carrier whenever it appears in a dark context.
+- The logo, symbol, and loader JSON should travel together as the source-of-truth asset package.
