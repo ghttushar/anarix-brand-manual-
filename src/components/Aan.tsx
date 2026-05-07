@@ -18,28 +18,30 @@ type ShapeStyle = {
 
 const shapeStyles: Record<Shape, ShapeStyle> = {
   diamond: {
-    background: "radial-gradient(circle at 28% 24%, #343b49 0%, #11151d 42%, #090c12 100%)",
-    glow: "rgba(242, 110, 119, 0.18)",
-    ring: "rgba(242, 110, 119, 0.22)",
-    shadow: "0 28px 64px -28px rgba(11,13,20,0.88)",
+    background:
+      "radial-gradient(circle at 50% 42%, #f88790 0%, #f5757e 34%, #f46d76 68%, #ef5f6c 100%)",
+    glow: "rgba(244, 109, 118, 0.28)",
+    ring: "rgba(247, 95, 107, 0.36)",
+    shadow: "0 30px 72px -28px rgba(0,0,0,0.84)",
   },
   circle: {
-    background: "radial-gradient(circle at 28% 24%, #323947 0%, #10141d 48%, #090c12 100%)",
-    glow: "rgba(255, 255, 255, 0.08)",
-    ring: "rgba(255, 255, 255, 0.14)",
-    shadow: "0 24px 54px -26px rgba(11,13,20,0.82)",
+    background:
+      "radial-gradient(circle at 50% 44%, #f9929a 0%, #f67b84 36%, #f46d76 72%, #ef616d 100%)",
+    glow: "rgba(244, 109, 118, 0.24)",
+    ring: "rgba(247, 95, 107, 0.32)",
+    shadow: "0 26px 58px -26px rgba(0,0,0,0.78)",
   },
   bar: {
-    background: "linear-gradient(90deg, #0b0d14 0%, #141a29 52%, #1c2440 100%)",
-    glow: "rgba(74, 98, 217, 0.18)",
-    ring: "rgba(74, 98, 217, 0.22)",
-    shadow: "0 26px 52px -24px rgba(20,26,41,0.72)",
+    background: "linear-gradient(90deg, #ef6370 0%, #f46d76 46%, #f77a84 100%)",
+    glow: "rgba(244, 109, 118, 0.22)",
+    ring: "rgba(247, 95, 107, 0.3)",
+    shadow: "0 24px 54px -24px rgba(0,0,0,0.72)",
   },
   cube: {
-    background: "linear-gradient(135deg, #1d2340 0%, #121723 45%, #090c12 100%)",
-    glow: "rgba(74, 98, 217, 0.22)",
-    ring: "rgba(74, 98, 217, 0.26)",
-    shadow: "0 28px 62px -26px rgba(12,16,28,0.86)",
+    background: "linear-gradient(135deg, #f88992 0%, #f46d76 44%, #ed5c69 100%)",
+    glow: "rgba(244, 109, 118, 0.24)",
+    ring: "rgba(247, 95, 107, 0.34)",
+    shadow: "0 28px 60px -26px rgba(0,0,0,0.8)",
   },
 };
 
